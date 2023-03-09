@@ -47,7 +47,7 @@ DELETE: http://localhost:8080/api/v1/cliente/:idCliente/credito/:idCredito - Eli
 Nota: Para poder implementar el uso de los metodo @POST y @PUT para la tabla "Client" (cliente) se debe de utilizar el siguiente formato;
 
 Body para crear o actualizar un cliente
-
+```json
 {  
   "name": "Javier Eduardo",
   "lastName":"Gonzalez",
@@ -56,12 +56,14 @@ Body para crear o actualizar un cliente
   "address":"av conchitas 1252",
   "birthdate":"1977-10-06"   
 }
+```
 Para poder implementar el uso de los metodo @POST y @PUT para la tabla "Loan"(credito) se debe de utilizar el siguiente formato;
 
 Body para crear o actualizar un credito
-
+```json
 {
   "amount": "1800",
   "paymentPlan":"6",
   "creationDate":"2023-01-06"
 }
+
