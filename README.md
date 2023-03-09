@@ -2,23 +2,24 @@
 
 Procedimiento para levantamiento y uso del servicio:
 
-Tener el archivo .jar creditosinvested-0.0.1-SNAPSHOT.jar (Este JAR fue creado usando la version de Java 17)
+1) Tener el archivo .jar creditosinvested-0.0.1-SNAPSHOT.jar (Este JAR fue creado usando la version de Java 17)
 
-La base de datos que se usa es MySQL.
-Ejecutar los comandos que contiene el archivo sql "mydb script.sql", los cuales sirven para crear la db de nombre "mydb" y las tablas "client" y "loan" con algunos datos ya pre-añadidos.
-Además el script crea un usuario de conexion usado por la API para poder accesar a la base de datos.
-Usuario: creditos_user_api
-Password: CredInvesApi102-
-El puerto que utiliza la API para la conexion a la base de datos es 3306 (localhost:3306).
+2) La base de datos que se usa es MySQL.
+   Ejecutar los comandos que contiene el archivo sql "mydb script.sql", los cuales sirven para crear la db de nombre "mydb" y las tablas "client" y     "loan" con algunos datos ya pre-añadidos.
+Además el script crea un usuario de conexion usado por la API para poder accesar a la base de datos.  
 
-Abrir consola y posicionarse dentro de la carpeta que contenga el archivo .jar.
-Correr el comando "java -jar creditosinvested-0.0.1-SNAPSHOT.jar"
+   Usuario: creditos_user_api.  
+   Password: CredInvesApi102-   
 
-Se utilizó la aplicacion Postman para probar la funcionalidad de la API con los diferentes metodos HTTP;
-Para poder realizar los request a la API se debe configurar una llave valor en el header;
-application_token = mypassword.
+   El puerto que utiliza la API para la conexion a la base de datos es 3306 (localhost:3306).
 
-Una vez realizada la configuracion se pueden realizar los request con los siguientes paths:
+3) Abrir consola y posicionarse dentro de la carpeta que contenga el archivo .jar.
+   Correr el comando "java -jar creditosinvested-0.0.1-SNAPSHOT.jar"
+   Se utilizó la aplicacion Postman para probar la funcionalidad de la API con los diferentes metodos HTTP;
+   Para poder realizar los request a la API se debe configurar una llave valor en el header;
+   application_token = mypassword.
+
+4) Una vez realizada la configuracion se pueden realizar los request con los siguientes paths:
 
 Para clientes;
 
